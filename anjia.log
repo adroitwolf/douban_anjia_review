@@ -1,0 +1,7 @@
+2022-09-12 18:24:57 [scrapy.core.engine] ERROR: Error while obtaining start requests
+Traceback (most recent call last):
+  File "D:\env\Anaconda3\lib\site-packages\scrapy\core\engine.py", line 150, in _next_request
+    request = next(self.slot.start_requests)
+  File "D:\code\python\anjia\anjia\spiders\review.py", line 19, in start_requests
+    yield Request(url=self.start_url,callback= self.parse,dont_filter=True)
+AttributeError: 'ReviewSpider' object has no attribute 'start_url'
