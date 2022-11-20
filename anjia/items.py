@@ -3,10 +3,10 @@
 # See documentation in:
 # https://docs.scrapy.org/en/latest/topics/items.html
 
-from turtle import title
 import scrapy
 
 
+# 自定义抓取对象属性
 class ReviewItem(scrapy.Item):
     author = scrapy.Field()
     pub_time = scrapy.Field()
